@@ -1,0 +1,12 @@
+.root {
+  --layout-columns: 4;
+  --layout-gap: clamp(16px, 2.5vw, 40px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding: var(--layout-gap);
+  background: url("../../../../assets/background.webp") center / cover no-repeat fixed;
+}

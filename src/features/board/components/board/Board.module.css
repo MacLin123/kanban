@@ -1,0 +1,47 @@
+﻿.scroll {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.board {
+  height: 100%;
+  min-width: calc(768px - (2 * var(--layout-gap)));
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
+  gap: var(--layout-gap);
+}
+
+.addButton {
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.createCard {
+  margin-bottom: 16px;
+  padding: clamp(8px, 1vw, 16px);
+  border-radius: 4px;
+  background: var(--surface-raised);
+  outline: 1px solid var(--accent);
+}
+
+.cardList {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emptyColumn {
+  margin: 0;
+  padding: 16px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/InterVariable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+:root {
+  --text-primary: rgb(255 255 255 / 87%);
+  --text-secondary: rgb(255 255 255 / 60%);
+  --text-danger: rgb(252 54 57 / 60%);
+  --icon-danger: #fc3639e5;
+  --accent: #0184cf;
+  --surface: rgb(0 0 0 / 70%);
+  --surface-raised: rgb(255 255 255 / 10%);
+  --border: rgb(255 255 255 / 8%);
+  --hover: rgb(255 255 255 / 20%);
+  --field-border: rgb(255 255 255 / 30%);
+  --field-background: rgb(255 255 255 / 7%);
+  --focus-ring: color-mix(in srgb, var(--accent) 50%, transparent);
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: var(--text-secondary);
+  background: #232323;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#root {
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.0036em;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.25;
+}

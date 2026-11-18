@@ -1,0 +1,57 @@
+.root {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  border: 1px solid var(--field-border);
+  border-radius: 20px;
+  padding: 0 64px;
+  background: var(--field-background);
+  color: var(--text-primary);
+  caret-color: var(--accent);
+  font: inherit;
+  font-size: 14px;
+  transition:
+    border-color 300ms ease-in-out,
+    box-shadow 300ms ease-in-out;
+  &::placeholder {
+    color: var(--text-secondary);
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: var(--accent);
+    transition-duration: 0s, 300ms;
+  }
+
+  &:focus {
+    border-color: var(--accent);
+    outline: none;
+    box-shadow: 0 0 0 4px var(--focus-ring);
+    transition-duration: 300ms;
+  }
+}
+
+.icon {
+  position: absolute;
+  inset-block: 0;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.clear {
+  position: absolute;
+  inset-block: 0;
+  right: 12px;
+  display: flex;
+  align-items: center;
+}
+

@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--layout-gap);
+  margin-bottom: var(--layout-gap);
+}
+
+.heading {
+  flex: 1 0 auto;
+  min-width: 0;
+}
+
+.search {
+  flex: 0 1 430px;
+  min-width: 220px;
+}
+
+.count {
+  margin: 10px 0 0;
+  font-size: 14px;
+}

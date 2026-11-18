@@ -1,0 +1,9 @@
+.root {
+  display: inline-block;
+  width: var(--icon-size, 24px);
+  height: var(--icon-size, 24px);
+  flex-shrink: 0;
+  vertical-align: middle;
+  mask: center / contain no-repeat;
+  -webkit-mask: center / contain no-repeat;
+}

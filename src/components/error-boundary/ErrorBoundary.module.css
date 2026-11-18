@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.message {
+  color: var(--text-danger);
+  overflow-wrap: anywhere;
+}
