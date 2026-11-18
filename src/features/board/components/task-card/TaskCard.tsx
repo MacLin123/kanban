@@ -72,6 +72,7 @@ export function TaskCard({
             <Button
               variant="ghost"
               tone="danger"
+              className={styles.deleteButton}
               title="Удалить задачу"
               onClick={() => onDelete(task.id)}
             >

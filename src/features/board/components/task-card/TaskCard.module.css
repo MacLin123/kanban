@@ -53,3 +53,11 @@
   margin-left: auto;
 }
 
+.deleteButton {
+  visibility: hidden;
+}
+
+.root:hover .deleteButton {
+  visibility: visible;
+}
+

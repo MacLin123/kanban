@@ -24,7 +24,7 @@ export function loadTasks(): Task[] {
     if (!tasks) {
       throw new Error("Сохранённые задачи имеют некорректную структуру.");
     }
-    return tasks;
+    if (tasks.length) return tasks;
   }
 
   const initialTasks = parseTasks(sourceTasks);
